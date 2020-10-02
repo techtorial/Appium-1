@@ -40,21 +40,21 @@ public class AppiumIntro1 {
 
         AndroidDriver<AndroidElement> androidDriver=new AndroidDriver(url, desiredCapabilities);
 
-        AndroidElement element=androidDriver.findElement(By.xpath("//android.widget.TextView[@text='Accessibility']"));
-        element.click();
+        AndroidElement accessibility=androidDriver.findElement(By.xpath("//android.widget.TextView[@text='Accessibility']"));
+        accessibility.click();
 
         androidDriver.navigate().back();
 
-        AndroidElement element1=androidDriver.findElement(By.xpath("//android.widget.TextView[@content-desc='Animation']"));
-        element1.click();
+        AndroidElement animationView=androidDriver.findElement(By.xpath("//android.widget.TextView[@content-desc='Animation']"));
+        animationView.click();
         androidDriver.navigate().back();
 
-        AndroidElement element2=androidDriver.findElement(By.xpath("//android.widget.TextView[@text='App']"));
-        element2.click();
+        AndroidElement appView =androidDriver.findElement(By.xpath("//android.widget.TextView[@text='App']"));
+        appView.click();
         androidDriver.navigate().back();
 
-        AndroidElement element3=androidDriver.findElement(By.xpath("//android.widget.TextView[@text='Content']"));
-        element3.click();
+        AndroidElement contentView=androidDriver.findElement(By.xpath("//android.widget.TextView[@text='Content']"));
+        contentView.click();
         androidDriver.navigate().back();
 
         AndroidElement element4=androidDriver.findElement(By.xpath("//android.widget.TextView[@content-desc='Graphics']"));
